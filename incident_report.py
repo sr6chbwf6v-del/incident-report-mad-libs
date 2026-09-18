@@ -9,6 +9,8 @@ time = input("Enter a time: ")
 device = input("Enter a device (include a or an): ")
 location = input("Enter a location (include the or a): ")
 suspicious_item = input("Enter a suspicious object (include a or an): ")
+severity = input("Enter a dramatic severity level: ")
+recommended_action = input("Enter a recommended action: ")
 
 incident_summaries = [
     f"At {time}, {device} in {location} attempted to communicate with {suspicious_item}.",
@@ -22,3 +24,5 @@ summary = random.choice(incident_summaries)
 print()
 print("INCIDENT SUMMARY")
 print(summary)
+print(f"Severity: {severity}")
+print(f"Recommended Action: {recommended_action}")
